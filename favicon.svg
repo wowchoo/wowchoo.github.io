@@ -1,0 +1,31 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="planet-base" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 17) rotate(47) scale(55)">
+      <stop stop-color="#FFB4DE"/>
+      <stop offset=".35" stop-color="#FF64B4"/>
+      <stop offset=".68" stop-color="#586DFF"/>
+      <stop offset="1" stop-color="#08172F"/>
+    </radialGradient>
+    <linearGradient id="planet-band" x1="10" y1="14" x2="55" y2="51" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#70E6FF"/>
+      <stop offset=".52" stop-color="#B99CFF"/>
+      <stop offset="1" stop-color="#FF64B4"/>
+    </linearGradient>
+    <clipPath id="planet-clip">
+      <circle cx="32" cy="32" r="27"/>
+    </clipPath>
+    <filter id="planet-glow" x="-18" y="-18" width="100" height="100" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+  </defs>
+  <circle cx="32" cy="32" r="28.5" fill="#70E6FF" opacity=".34" filter="url(#planet-glow)"/>
+  <circle cx="32" cy="32" r="27" fill="url(#planet-base)"/>
+  <g clip-path="url(#planet-clip)" opacity=".9">
+    <path d="M-3 23C10 14 20 16 31 22C43 29 53 27 69 16" stroke="url(#planet-band)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-4 39C10 31 21 32 34 39C46 45 57 44 70 35" stroke="#70E6FF" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+    <path d="M5 52C18 45 30 47 42 52C52 56 60 55 69 49" stroke="#FF88C8" stroke-opacity=".68" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="23" cy="29" rx="7" ry="4" fill="#F7B5FF" opacity=".58" transform="rotate(-16 23 29)"/>
+  </g>
+  <circle cx="32" cy="32" r="26.25" stroke="#E9FBFF" stroke-opacity=".58" stroke-width="1.5"/>
+  <ellipse cx="24" cy="19" rx="8" ry="5" fill="white" opacity=".22" transform="rotate(-28 24 19)"/>
+</svg>
